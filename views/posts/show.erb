@@ -1,0 +1,11 @@
+
+<h1>More Information about <%= @post[:title] %></h1>
+<div class="containter show jumbotron text-center">
+  <div class="row col-12 text-center">
+<img src="/images/<%= @post[:image] %>" alt="">
+</div>
+<p><%= @post[:body] %></p>
+
+<a href="/posts/<%= @post[:id] %>/edit">Edit</a>
+
+</div>

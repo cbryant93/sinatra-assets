@@ -1,0 +1,19 @@
+<h2>Top 10 Music Artists in USA</h2>
+<div class="container jumbotron">
+<div class="row">
+  <div class="col-12 text-center ">
+    <% @posts.each do |post| %>
+    <% puts post %>
+  <a class="title" href="/posts/<%= post[:id] %>"><%= post[:title] %></a>
+   <% end %>
+</div>
+</div>
+<div class="row">
+<div class="col-12 text-center">
+  <% @posts.each do |post| %>
+  <% puts post %>
+<img src="/images/<%= post[:image] %>" alt="">
+<% end %>
+</div>
+</div>
+</div>
